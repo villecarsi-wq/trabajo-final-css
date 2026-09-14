@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>GMFitness</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <link rel="stylesheet" href="styles.css">
+  </head>
+  <body>
+    <div class="page-shell">
+      <nav class="navbar navbar-expand-sm bg-dark navbar-dark">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="index.html">Logo</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#collapsibleNavbar">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+
+          <div class="collapse navbar-collapse" id="collapsibleNavbar">
+            <ul class="navbar-nav me-auto">
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  Inicio
+                </a>
+                <ul class="dropdown-menu">
+                  <li><a class="dropdown-item" href="index.html">Resumen</a></li>
+                  <li><a class="dropdown-item" href="index.html">Mi progreso</a></li>
+                  <li><a class="dropdown-item" href="testimonios.html">Historial</a></li>
+                </ul>
+              </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  Planes
+                </a>
+                <ul class="dropdown-menu">
+                  <li><a class="dropdown-item" href="planes.html">Premium</a></li>
+                  <li><a class="dropdown-item" href="planes.html">Gratis</a></li>
+                  <li><a class="dropdown-item" href="planes.html">Comparar</a></li>
+                </ul>
+              </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  Testimonios
+                </a>
+                <ul class="dropdown-menu">
+                  <li><a class="dropdown-item" href="testimonios.html">Clientes</a></li>
+                  <li><a class="dropdown-item" href="testimonios.html">Resultados</a></li>
+                  <li><a class="dropdown-item" href="testimonios.html">Historial</a></li>
+                </ul>
+              </li>
+            </ul>
+            <ul class="navbar-nav ms-auto align-items-center">
+              <li class="nav-item">
+                <button type="button" class="btn btn-outline-light btn-sm ms-2" data-bs-toggle="modal" data-bs-target="#registerModal">
+                  Registrar
+                </button>
+              </li>
+              <li class="nav-item">
+                <button type="button" class="btn btn-primary btn-sm ms-2" data-bs-toggle="modal" data-bs-target="#myModal">
+                  Iniciar sesión
+                </button>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+
+      <main class="plans-wrapper">
+        <header class="plans-header">
+          <h1><span class="highlight">Planes</span></h1>
+          <p>Empieza <span class="highlight">gratis</span>, escala cuando quieras.</p>
+        </header>
+
+        <section class="plans-grid" aria-label="Planes de suscripción">
+          <article class="plan-card free">
+            <h2>Gratis</h2>
+            <div class="price-row">
+              <div class="price"><span class="currency">$</span>0</div>
+              <div class="period">/siempre</div>
+            </div>
+            <div class="divider"></div>
+            <ul class="features">
+              <li><span class="bi bi-check-lg check"></span> Acceso básico</li>
+              <li><span class="bi bi-check-lg check"></span> Seguimiento simple</li>
+              <li><span class="bi bi-check-lg check"></span> Rutinas iniciales</li>
+              <li><span class="bi bi-x-lg cross"></span> Reportes avanzados</li>
+              <li><span class="bi bi-x-lg cross"></span> Asesoría personalizada</li>
+              <li><span class="bi bi-x-lg cross"></span> Soporte prioritario</li>
+            </ul>
+            <button type="button" class="plan-btn">Comenzar Gratis</button>
+          </article>
+
+          <article class="plan-card premium">
+            <div class="badge-popular">Más popular</div>
+            <h2>Premium</h2>
+            <div class="price-row">
+              <div class="price"><span class="currency">$</span>59.900</div>
+              <div class="period">/mes</div>
+            </div>
+            <div class="divider"></div>
+            <ul class="features">
+              <li><span class="bi bi-check-lg check"></span> Planes completos</li>
+              <li><span class="bi bi-check-lg check"></span> Dieta personalizada</li>
+              <li><span class="bi bi-check-lg check"></span> Progreso detallado</li>
+              <li><span class="bi bi-check-lg check"></span> Rutinas avanzadas</li>
+              <li><span class="bi bi-check-lg check"></span> Revisión semanal</li>
+              <li><span class="bi bi-check-lg check"></span> Soporte activo</li>
+            </ul>
+            <button type="button" class="plan-btn">Obtener Premium</button>
+          </article>
+        </section>
+      </main>
+
